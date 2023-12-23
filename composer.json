@@ -1,5 +1,5 @@
 {
-    "name": "ezsystems/ezprestapiprovider-ls",
+    "name": "se7enxweb/ezprestapiprovider-ls",
     "description": "eZ Publish REST API v1 content provider",
     "type": "ezpublish-legacy-extension",
     "license": "GPL-2.0",
