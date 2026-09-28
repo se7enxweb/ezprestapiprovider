@@ -2,8 +2,9 @@
 <software>
     <metadata>
         <name>eZ REST API Provider LS</name>
-        <version>dev-master</version>
+        <version>6.0.1</version>
         <copyright>Copyright (C) eZ Systems AS. All rights reserved.</copyright>
-        <license>For full copyright and license information view LICENSE file provided with this software.</license>
+        <license>GNU General Public License v2.0 (or any later version)</license>
+        <info_url>https://github.com/se7enxweb/ezprestapiprovider</info_url>
     </metadata>
 </software>
