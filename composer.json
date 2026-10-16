@@ -1,6 +1,6 @@
 {
     "name": "se7enxweb/ezprestapiprovider",
-    "description": "Exponential REST API v1 content provider for accessing Exponential Content Remotely. Great for smarter developers!",
+    "description": "Deprecated compatibility shim: REST API v1 and v2 are served by se7enxweb/ezprestapi. Keeps the class names ezpRestApiProvider and ezpRestContentController of the old v1 content provider working.",
     "type": "ezpublish-legacy-extension",
     "license": "GPL-2.0-or-later",
     "authors": [
@@ -11,7 +11,8 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "se7enxweb/ezpublish-legacy-installer": "*"
+        "se7enxweb/ezpublish-legacy-installer": "*",
+        "se7enxweb/ezprestapi": "~1.2.6"
     },
     "extra": {
         "ezpublish-legacy-extension-name": "ezprestapiprovider"
