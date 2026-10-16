@@ -1,0 +1,16 @@
+ezprestapiprovider (deprecated)
+===============================
+
+REST API v1 and v2 are served by one extension, ezprestapi (https://github.com/se7enxweb/ezprestapi).
+Since 6.0.4 this extension is a compatibility shim and adds nothing of its own:
+
+- ezpRestApiProvider extends ezp7xRestApiProvider and ezpRestContentController extends
+  ezp7xRestContentController, so a rest.ini or code that names the old classes keeps working;
+- its rest.ini maps the prefixes ezp and ezpl to ezp7xRestApiProvider, the same values ezprestapi sets,
+  so activating both, in either order, gives the same API;
+- the classes it used to share with ezprestapi (ezpRestAtomController, ezpRestAtomView, ezpRestAtomDecorator,
+  ezpRestContentModel, ezpRestApiViewController) are only in ezprestapi now.
+
+The v1 URLs (/api/ezp/v1/content/node/<id>/list/offset/0/limit/20?ResponseGroups=Fields and the rest)
+answer with the same bodies as before. Migrate by activating ezprestapi and removing
+ActiveExtensions[]=ezprestapiprovider, then clear the INI cache and regenerate the extension autoloads.
